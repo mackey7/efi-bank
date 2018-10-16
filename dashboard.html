@@ -5,56 +5,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./app/css/style.css">
+    <link rel="stylesheet" href="./app/css/normalize.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
     <title>Dashboard</title>
 </head>
 
 <body>
-    <nav>
-        <img src="" alt="">
+    <nav class="navigation-top">
+        <div class='navigation-container'>
+            <img src="./app/img/logo.svg" class="navigation-top_logo" alt="">
 
-        <section>
-            <i class="far fa-user"></i>
-            <div>
-                <p>Jan Kowalski</p>
+            <section class="navigation-container_user">
+                <i class="far fa-user"></i>
                 <div>
-                    <i class="far fa-envelope"></i>
-                    <i class="fas fa-cog"></i>
+                    <p>Jan Kowalski</p>
+                    <div class="user-container_icon">
+                        <i class="far fa-envelope"></i>
+                        <i class="fas fa-cog"></i>
+                    </div>
                 </div>
-            </div>
 
-        </section>
-        <section>
-            <ul>
-                <li><a href="">
-                        <i class="fas fa-home"></i>
-                        <p>Home</p>
+            </section>
+            <section class="navigation-top_menu">
 
-                    </a></li>
-                <li><a href="">
-                        <i class="fas fa-chart-area"></i>
-                        <p>Analyse</p>
-                    </a></li>
-                <li><a href="">
-                        <i class="fas fa-chart-area"></i>
-                        <p>Plan</p>
-                    </a></li>
-                <li><a href="">
-                        <i class="far fa-money-bill-alt"></i>
-                        <p>Earn</p>
+                <a href="">
+                    <i class="fas fa-home"></i>
+                    <p>Home</p>
 
-
-                    </a></li>
-            </ul>
-        </section>
-
-        <section>
-            <i class="fas fa-search"></i>
-            <i class="fas fa-sign-out-alt"></i>
-        </section>
+                </a>
+                <a href="">
+                    <i class="fas fa-chart-area"></i>
+                    <p>Analyse</p>
+                </a>
+                <a href="">
+                    <i class="fas fa-chart-area"></i>
+                    <p>Plan</p>
+                </a>
+                <a href="">
+                    <i class="far fa-money-bill-alt"></i>
+                    <p>Earn</p>
 
 
+                </a>
+
+            </section>
+
+            <section class="nav-right-menu">
+                <button> <i id=" search" class="fas fa-search"></i> </button>
+
+                <i id='logout' class="fas fa-sign-out-alt"></i>
+            </section>
 
 
+
+        </div>
 
     </nav>
     <main>
@@ -153,8 +159,6 @@
                             <p>Etiam aliguam </p>
                             <span> Cash<i class="fas fa-arrow-down"></i> </span>
                         </div>
-
-
                     </li>
                 </ul>
             </div>
