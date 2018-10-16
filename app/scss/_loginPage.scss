@@ -1,0 +1,137 @@
+@import "_variables";
+html,
+body {
+    height: 100%;
+}
+
+.login-page {
+    background: url(../img/background-image.jpeg)no-repeat bottom;
+    height: 100%;
+    background-size: cover;
+    background-blend-mode: multiply;
+    .login-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        padding-top: 7%;
+    }
+    .login-logo {
+        border: 2px solid $white;
+        padding: 20px;
+        height: 150px;
+        width: 150px;
+        border-radius: 4px;
+    }
+    .login-box {
+        background-color: $background-color;
+        padding: 20px;
+        border-radius: 4px;
+        margin-left: 20px;
+        width: 500px;
+    }
+    .login-header {
+        h2,
+        h4 {
+            text-align: center;
+            color: $white;
+        }
+    }
+    .login-form {
+        margin-top: 100px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        border: 1px solid $white;
+        padding: 20px;
+        border-radius: 4px;
+        label {
+            display: none;
+        }
+        input[type="text"] {
+            width: 78%;
+        }
+        input {
+            margin-top: 17px;
+            padding: 10px;
+            width: 100%;
+        }
+        .password-row {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: end;
+            -ms-flex-align: end;
+            align-items: flex-end;
+            .far {
+                margin: 10px;
+                -ms-flex-item-align: end;
+                align-self: flex-end;
+                cursor: pointer;
+            }
+        }
+        .login-form_btn-container {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .login-form_btn__other {
+            background-color: inherit;
+            color: $white;
+            border: 0;
+            margin-right: 20px;
+            cursor: pointer;
+        }
+        .login-form_btn__go {
+            background-color: $white;
+            border: 0;
+            width: 100px;
+            cursor: pointer;
+        }
+    }
+    .login-page_menu {
+        ul {
+            li {
+                display: inline;
+                a {
+                    color: $white;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    padding-right: 10px;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .login-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .login-logo {
+        display: none;
+    }
+}
