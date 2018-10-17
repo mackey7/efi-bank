@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./app/css/style.css">
+    <link rel="stylesheet" href="./app/css/normalize.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <title>Transfer</title>
+</head>
+
+<body>
+    <nav class="navigation-top">
+        <div class='navigation-container'>
+
+            <span id="hamburger" class="hamburger"> <i class=" hamburger fas fa-bars"></i></span>
+
+            <img src="./app/img/logo.svg" class="navigation-top_logo" alt="">
+
+            <section id="cntUser" class="navigation-container_user">
+                <i class="far fa-user"></i>
+                <div>
+                    <p>Jan Kowalski</p>
+                    <div class="user-container_icon">
+                        <i class="far fa-envelope"></i>
+                        <i class="fas fa-cog"></i>
+                    </div>
+                </div>
+            </section>
+
+            <section id="cntUser" class="navigation-top_menu">
+
+                <a href="">
+                    <i class="fas fa-home"></i>
+                    <p>Home</p>
+
+                </a>
+                <a href="">
+                    <i class="fas fa-chart-area"></i>
+                    <p>Analyse</p>
+                </a>
+                <a href="">
+                    <i class="fas fa-chart-area"></i>
+                    <p>Plan</p>
+                </a>
+                <a href="">
+                    <i class="far fa-money-bill-alt"></i>
+                    <p>Earn</p>
+
+
+                </a>
+
+            </section>
+
+            <section class="nav-right-menu">
+                <div class="search-conatiner hidden ">
+                    <input class="search-input" type="text" placeholder="Search...">
+                </div>
+                <button> <i id="search" class="fas fa-search"></i> </button>
+
+                <i id='logout' class="fas fa-sign-out-alt"></i>
+            </section>
+
+
+
+        </div>
+
+    </nav>
+    <main class="main">
+
+        <section class="transfer-container">
+            <div>
+                <i class="fas fa-arrow-left"></i>
+
+
+                <div class="current_acount">
+                    <i class="far fa-id-card"></i>
+                    <div>
+                        <p>Current Account</p>
+                        <p>00 0000 0000 0000 0000 0000 0000 </p>
+                    </div>
+                    <div>
+                        <span>
+                            2917.50 PLN
+                        </span>
+                        <i class="fas fa-arrow-circle-down"></i>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <i class="fas fa-plus-circle"></i>
+                    <p>Add the ccount from which you draw funds</p>
+                </div>
+
+                <div>
+                    <p>Type</p>
+                    <div>
+                        <label for="country">
+                            <input type="radio" id="country" value="country" name="transfer-type" checked>
+                            <i class="fas fa-money-bill-alt"></i>
+                            <p>Country</p>
+                        </label>
+
+
+                        <label for="own">
+                            <input type="radio" id="own" value="own" name="transfer-type" checked>
+                            <i class="fas fa-money-bill-alt"></i>
+                            <p>Own</p>
+                        </label>
+
+                        <label for="currencies">
+                            <input type="radio" id="currencies" value="currencies" name="transfer-type">
+                            <i class="fas fa-money-bill-alt"></i>
+                            <p>Currencies</p>
+                        </label>
+
+                        <label for="zus">
+                            <input type="radio" id="zus" value="zus" name="transfer-type">
+                            <i class="fas fa-money-bill-alt"></i>
+                            <p>Zus</p>
+                        </label>
+
+
+                        <label for="tax">
+                            <input type="radio" id="tax" value="tax" name="transfer-type">
+                            <i class="fas fa-money-bill-alt"></i>
+                            <p>Tax</p>
+                        </label>
+
+                        <label for="gsm">
+                            <input type="radio" id="gsm" value="gsm" name="transfer-type">
+                            <i class="fas fa-money-bill-alt"></i>
+                            <p>GSM</p>
+                        </label>
+
+
+
+                    </div>
+
+                </div>
+
+
+                <div>
+                    <p>Recipient</p>
+                    <div>
+
+                    </div>
+                </div>
+                <div>
+                    <p>Where</p>
+                    <div>
+
+                    </div>
+                </div>
+                <div>
+                    <p>Number</p>
+                    <div>
+
+                    </div>
+                </div>
+
+                <div>
+                    <p>Sum</p>
+                    <div>
+
+                    </div>
+                </div>
+
+                <div>
+                    <p>when</p>
+                    <div>
+                        <input type="date">
+                    </div>
+                </div>
+                <div>
+                    <p>Title</p>
+                    <div>
+                        <input type="text">
+                    </div>
+                </div>
+
+                <div>
+                    <p>Type od transfer</p>
+
+                    <div>
+                        <label for="">
+                            <input type="text">
+                        </label>
+                    </div>
+                </div>
+
+
+
+
+
+
+            </div>
+            <button>
+                Continue
+            </button>
+            </div>
+
+        </section>
+
+
+
+    </main>
+
+
+
+
+
+
+
+
+    <script src="./app/script/script.js"></script>
+
+
+
+</body>
+
+</html>
