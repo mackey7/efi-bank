@@ -20,3 +20,32 @@ bank.addEventListener("click", function () {
 payment.addEventListener("click", function () {
     window.location.assign("./transfer.html")
 })
+
+
+// function for navigation
+const logout = document.querySelector("#logout");
+logout.addEventListener('click', function () {
+    window.location.assign("./index.html")
+});
+const search = document.querySelector("#search");
+const searchConatiner = document.querySelector('.search-conatiner')
+search.addEventListener("click", function () {
+    searchConatiner.classList.toggle('active')
+    searchConatiner.classList.toggle('hidden')
+
+
+});
+
+
+
+
+
+
+const hamburger = document.querySelector("#hamburger")
+hamburger.addEventListener('click', function (e) {
+    console.log(e.target)
+    const cntUser = document.querySelector('#cntUser');
+    cntUser.style.display = "block";
+})
+
+
