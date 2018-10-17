@@ -15,9 +15,12 @@
 <body>
     <nav class="navigation-top">
         <div class='navigation-container'>
+
+            <span id="hamburger" class="hamburger"> <i class=" hamburger fas fa-bars"></i></span>
+
             <img src="./app/img/logo.svg" class="navigation-top_logo" alt="">
 
-            <section class="navigation-container_user">
+            <section id="cntUser" class="navigation-container_user">
                 <i class="far fa-user"></i>
                 <div>
                     <p>Jan Kowalski</p>
@@ -26,9 +29,9 @@
                         <i class="fas fa-cog"></i>
                     </div>
                 </div>
-
             </section>
-            <section class="navigation-top_menu">
+
+            <section id="cntUser" class="navigation-top_menu">
 
                 <a href="">
                     <i class="fas fa-home"></i>
@@ -53,7 +56,10 @@
             </section>
 
             <section class="nav-right-menu">
-                <button> <i id=" search" class="fas fa-search"></i> </button>
+                <div class="search-conatiner hidden ">
+                    <input class="search-input" type="text" placeholder="Search...">
+                </div>
+                <button> <i id="search" class="fas fa-search"></i> </button>
 
                 <i id='logout' class="fas fa-sign-out-alt"></i>
             </section>

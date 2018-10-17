@@ -2,3 +2,6 @@
 @import '_variables';
 @import "_dashboard";
 @import "_navigation";
+.active {
+    display: block;
+}

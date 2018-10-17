@@ -12,8 +12,13 @@
     width: 80%;
 }
 
+.hamburger {
+    display: none;
+}
+
 .navigation-top_logo {
     height: 70px;
+    width: 70px;
     border: 1px solid $white;
     padding: 20px;
     margin-top: 20px;
@@ -24,6 +29,12 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     margin-bottom: 20px;
     .fa-user {
         height: 70px;
@@ -58,6 +69,12 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
     a {
         text-decoration: none;
         color: $white;
@@ -95,6 +112,9 @@
         padding-right: 10px;
         border-right: 3px solid $white;
         height: 100px;
+        &:focus {
+            outline: none;
+        }
     }
     .fa-search {
         color: $white;
@@ -108,5 +128,69 @@
             color: #b10101;
             cursor: pointer;
         }
+    }
+}
+
+.search-conatiner {
+    width: 100%;
+    position: relative;
+}
+
+.search-input {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 20px;
+    padding: 20px;
+    height: 50px;
+    width: 300px;
+    position: absolute;
+    top: -30px;
+    right: -20px;
+}
+
+.test {
+    display: none;
+}
+
+@media only screen and (max-width:1200px) {
+    .navigation-container {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    .hamburger {
+        z-index: 10;
+        display: block;
+        font-size: 70px;
+        color: $white;
+        cursor: pointer;
+        padding: 10px 20px 0px 20px;
+    }
+    .navigation-top_logo {
+        height: 50px;
+        width: 50px;
+        margin-bottom: 20px;
+    }
+    .navigation-container {
+        width: 100%;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .navigation-container_user,
+    .navigation-top_menu {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1050px) {}
+
+@media only screen and (max-width: 500px) {
+    .navigation-top_logo {
+        height: 30px;
+        width: 30px;
+    }
+    .search-input {
+        width: 200px;
     }
 }
