@@ -25,18 +25,20 @@
                     <form action="" class="login-form">
                         <img src="" alt="">
                         <label for="">Login </label>
-                        <input type="text" placeholder="login">
-                        <label for="">Password</label>
+                        <input id="login" type="text" placeholder="login">
+
 
                         <div class="password-row">
-                            <input type="password" placeholder="Password">
+                            <label for="">Password</label>
+                            <input id="password" type="password" placeholder="Password">
                             <span><i class="far fa-keyboard"></i> </span>
-                            <span><i class="far fa-eye"></i></span>
+                            <span><i id="showPassword" class="far fa-eye"></i></span>
                         </div>
                         <div class="login-form_btn-container">
                             <button class="login-form_btn__other"> Select Other</button>
-                            <button class="login-form_btn__go"> Go</button>
+                            <button id="loginSubmit" class="login-form_btn__go"> Go</button>
                         </div>
+                        <p id="infoContainer" class=" red hidden">Aby przejść dalej login i hasło nie mogą być puste</p>
 
 
                     </form>
@@ -62,7 +64,7 @@
 
 
 
-    <script src="./app/script/script.js"></script>
+    <script src="./app/script/login.js"></script>
 </body>
 
 </html>
