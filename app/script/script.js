@@ -15,7 +15,7 @@ bank.addEventListener("click", function () {
 
 
 payment.addEventListener("click", function () {
-    window.location.assign("./transfer.html")
+    window.location.assign("./dashboard.html")
 });
 
 // function for navigation

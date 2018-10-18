@@ -31,10 +31,10 @@
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    flex-wrap: nowrap;
     margin-bottom: 20px;
     .fa-user {
         height: 70px;
@@ -182,8 +182,6 @@
         display: none;
     }
 }
-
-@media only screen and (max-width: 1050px) {}
 
 @media only screen and (max-width: 500px) {
     .navigation-top_logo {

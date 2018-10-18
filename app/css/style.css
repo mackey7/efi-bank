@@ -137,10 +137,7 @@ body {
       font-weight: 20px;
       padding: 20px; }
   .main-container .swich-container {
-    padding-top: 40px;
-    /* Hide default HTML checkbox */
-    /* The slider */
-    /* Rounded sliders */ }
+    padding-top: 40px; }
     .main-container .swich-container .switch {
       position: relative;
       display: inline-block;
