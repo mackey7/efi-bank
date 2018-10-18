@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
     <link rel="stylesheet" href="./app/css/style.css">
     <link rel="stylesheet" href="./app/css/normalize.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
@@ -15,11 +16,8 @@
 <body>
     <nav class="navigation-top">
         <div class='navigation-container'>
-
             <span id="hamburger" class="hamburger"> <i class=" hamburger fas fa-bars"></i></span>
-
             <img src="./app/img/logo.svg" class="navigation-top_logo" alt="">
-
             <section id="cntUser" class="navigation-container_user">
                 <i class="far fa-user"></i>
                 <div>
@@ -30,13 +28,10 @@
                     </div>
                 </div>
             </section>
-
             <section id="cntUser" class="navigation-top_menu">
-
                 <a href="">
                     <i class="fas fa-home"></i>
                     <p>Home</p>
-
                 </a>
                 <a href="">
                     <i class="fas fa-chart-area"></i>
@@ -49,32 +44,21 @@
                 <a href="">
                     <i class="far fa-money-bill-alt"></i>
                     <p>Earn</p>
-
-
                 </a>
-
             </section>
-
             <section class="nav-right-menu">
                 <div class="search-conatiner hidden ">
                     <input class="search-input" type="text" placeholder="Search...">
                 </div>
                 <button> <i id="search" class="fas fa-search"></i> </button>
-
                 <i id='logout' class="fas fa-sign-out-alt"></i>
             </section>
-
-
-
         </div>
-
     </nav>
     <main class="main">
         <div class="main-container">
             <div class="main-conatiner">
-
                 <div class="finanse-container">
-
                     <p class="finanse-container__p">Finance life stream</p>
                     <div class="finanse-container-info">
                         <div class="finanse-container-info_item">
@@ -91,13 +75,11 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="redirect-container">
                     <div class=" row finanse-redirect">
                         <p>add: </p>
                         <button id="bank" class='finanse-redirect-btnAdd'>Bank </button>
                         <button id="payment" class='finanse-redirect-btnAdd'>Payment</button>
-
                     </div>
                     <div class="swich-container row ">
                         Account analysis <label class="switch">
@@ -106,137 +88,35 @@
                         </label>
                     </div>
                 </div>
-
-
             </div>
-
             <div id="analyse" class="analyse-container">
-                Analyse
-            </div>
 
+                <div id="chartContainer" style="height: 370px; width: 100%;"></div>
+
+            </div>
             <div class="main-conatiner">
                 <div class=" products-container">
-
                     <p class="products-container__p">Products</p>
                     <div class="rowe">
-                        <div class=" products-container__item">
-                            <i class="fas fa-wallet"></i>
-                            <div class=" products-container__item_content">
-                                <p>Wallet</p>
-                                <span>489.50 PLN</span>
-                            </div>
-                        </div>
-
-                        <div class=" products-container__item">
-                            <i class="fas fa-piggy-bank"></i>
-                            <div class=" products-container__item_content">
-                                <p>Deposits</p>
-                                <span>12411.20 EUR </span>
-                            </div>
-                        </div>
-                        <div class=" products-container__item">
-                            <i class="fas fa-hand-holding-usd"></i>
-                            <div class=" products-container__item_content">
-                                <p>Acounts</p>
-                                <span>8000.68 PLN</span>
-                            </div>
-                        </div>
-                        <div class=" products-container__item">
-                            <i class="fas fa-chart-pie"></i>
-                            <div class=" products-container__item_content">
-                                <p>Funds</p>
-                                <span>4500.00 PLN</span>
-                            </div>
-                        </div>
-                        <div class=" products-container__item">
-                            <i class="fas fa-hand-holding-usd"></i>
-                            <div class=" products-container__item_content">
-                                <p>Bank Loans</p>
-                                <span>3000.00 EUR</span>
-                            </div>
-                        </div>
-
-
-
                     </div>
                 </div>
-
                 <div class="history-container">
                     <p class="history-container__p">History</p>
                     <div class="history-box">
-
-
-                        <div class="history-item">
+                        <!-- <div class="history-item">
                             <span class="history-item_date">1.01</span>
-                            <div class="history-item_content">
+                            <div class="history-itemconst_content">
                                 <p>Etiam aliguam </p>
                                 <span> Cash<i class="fas fa-arrow-down"></i> </span>
                             </div>
                             <p class="history-item_amount">200.00 <span>PLN</span></p>
-                        </div>
-                        <div class="history-item">
-                            <span class="history-item_date">1.01</span>
-                            <div class="history-item_content">
-                                <p>Etiam aliguam </p>
-                                <span> Cash<i class="fas fa-arrow-down"></i> </span>
-                            </div>
-                            <p class="history-item_amount">200.00 <span>PLN</span></p>
-                        </div>
-
-                        <div class="history-item">
-                            <span class="history-item_date">1.01</span>
-                            <div class="history-item_content">
-                                <p>Etiam aliguam </p>
-                                <span> Cash<i class="fas fa-arrow-down"></i> </span>
-                            </div>
-                            <p class="history-item_amount">200.00 <span>PLN</span></p>
-                        </div>
-                        <div class="history-item">
-                            <span class="history-item_date">1.01</span>
-                            <div class="history-item_content">
-                                <p>Etiam aliguam </p>
-                                <span> Cash<i class="fas fa-arrow-down"></i> </span>
-                            </div>
-                            <p class="history-item_amount">200.00 <span>PLN</span></p>
-                        </div>
-                        <div class="history-item">
-                            <span class="history-item_date">1.01</span>
-                            <div class="history-item_content">
-                                <p>Etiam aliguam </p>
-                                <span> Cash<i class="fas fa-arrow-down"></i> </span>
-                            </div>
-                            <p class="history-item_amount">200.00 <span>PLN</span></p>
-                        </div>
-
-
-
-
-
+                        </div> -->
                     </div>
                 </div>
-
-
-
             </div>
-
         </div>
-
-
-
-
-
-
     </main>
-
-
-
-
-
-
     <script src="./app/script/script.js"></script>
-
-
-
 </body>
 
 </html>
